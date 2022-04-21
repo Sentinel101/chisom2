@@ -1,4 +1,4 @@
-
+import os
 ##### LOGO #####
 
 logo = """
@@ -95,6 +95,8 @@ while (loop == 'true'):
 
 def login():
 
+os.system('clear')
+
 	try:
 
 		toket = open('login.txt','r')
@@ -114,6 +116,8 @@ def login():
 		pwd = raw_input('\033[1;96m \x1b[1;93mPassword \x1b[1;91m: \x1b[1;92m')
 
 		tik()
+
+os.system('clear')
 
 		try:
 
@@ -138,6 +142,8 @@ def login():
 		url = br.geturl()
 
 		if 'save-device' in url:
+
+os.system('clear')
 
 			try:
 
