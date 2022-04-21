@@ -95,8 +95,6 @@ while (loop == 'true'):
 
 def login():
 
-	os.system('clear')
-
 	try:
 
 		toket = open('login.txt','r')
@@ -104,8 +102,6 @@ def login():
 		menu() 
 
 	except (KeyError,IOError):
-
-		os.system('clear')
 
 		print logo
 
