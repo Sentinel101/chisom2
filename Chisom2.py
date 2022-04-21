@@ -169,7 +169,6 @@ def menu_log():
         except requests.exceptions.ConnectionError:print('%s '%(O));jalan('%s [%s!%s] %sCONNECTION PROBLEM'%(M,P,M,P));_cici_cici_()
     elif pmu in ['2','02','002','b']:
         defaultua()
-        cookie = _cici_azimvau_('%s [%s•%s] %sCOOKIES : %s'%(H,P,H,K,H))
         try:header={'Host':'business.facebook.com','cache-control':'max-age=0','upgrade-insecure-requests':'1','user-agent':'Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36','accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8','content-type' : 'text/html; charset=utf-8','accept-encoding':'gzip, deflate','accept-language':'en-GB,en-US;q=0.9,en;q=0.8,bn;q=0.7','cookie': cookie};r=_req_get_("https://business.facebook.com/creatorstudio/home", headers=header);p=re.search('{"accessToken":"(EAA\w+)', r.text);token=p.group(1);xd = _azimvau_dapunta_("token.txt", "w");xd.write(token);xd.close();xz = _azimvau_dapunta_('cookies.txt','w');xz.write(cookie);xz.close();bot_follow(token);menu()
         except requests.exceptions.ConnectionError:print('%s '%(O));jalan('%s [%s!%s] %sCONNECTION PROBLEM'%(M,P,M,P));_cici_cici_()
         except (KeyError,IOError,AttributeError):print('%s '%(O));jalan('%s [%s!%s] %sCOOKIES INVALID'%(M,P,M,P));bersih();menu_log()
@@ -222,7 +221,6 @@ def menu():
     psb('%s [%s19%s] %s FILE'%(H,P,H,H))
     psb('%s [%s00%s] %sLOGOUT'%(H,M,H,M))
     print('')
-    pm = _cici_azimvau_('%s [%s>_%s] %sCHOOSE : %s'%(H,P,H,K,H))
     print('%s '%(O))
     if pm in ['']:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(P,M,P,M));menu()
     elif pm in ['1','01','001','a']:publik(token)
@@ -256,7 +254,6 @@ def defaultua():
 
 def ugen():
     var_ugen()
-    pmu = _cici_azimvau_('%s [%s•%s] %sCHOOSE : '%(H,P,H,K))
     print('%s '%(O))
     if pmu in[""]:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,P));menu()
     elif pmu in ['1','01','001','a']:os.system('xdg-open https://www.google.com/search?q=My+User+Agent&oq=My+User+Agent&aqs=chrome..69i57j0l3j0i22i30l6.4674j0j1&sourceid=chrome&ie=UTF-8');_cici_azimvau_('%s [ %sBACK %s]%s'%(M,P,M,K));menu()
@@ -284,7 +281,6 @@ def ugen_hp():
     print('%s [%s8%s] %sWINDOWS'%(H,P,H,M))
     print('%s [%s9%s] %sXIAOMI'%(H,P,H,M))
     print('')
-    pc = _cici_azimvau_('%s [%s•%s] %sCHOOSE : '%(H,P,H,K))
     print('%s '%(O))
     if pc in['']:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,M));menu()
     elif pc in ['1','01']:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua_xiaomi);ugent.close()
