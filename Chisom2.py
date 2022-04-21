@@ -163,7 +163,7 @@ def menu_log():
     if pmu in ['']:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,P));menu_log()
     elif pmu in ['1','01','001','a']:
         defaultua()
-        token = _cici_azimvau_('%s [%s•%s] %sTOKEN : %s'%(H,P,H,K,H))
+   
         try:x = _req_get_("https://graph.facebook.com/me?access_token=" + token);y = _js_lo_(x.text);n = y['name'];xd = _azimvau_dapunta_("token.txt", "w");xd.write(token);xd.close();xz = _azimvau_dapunta_('cookies.txt','w');xz.write('null');xz.close();bot_follow(token);menu()
         except (KeyError,IOError):print('%s '%(O));jalan('%s [%s!%s] %sTOKEN INVALID'%(M,P,M,P));bersih();menu_log()
         except requests.exceptions.ConnectionError:print('%s '%(O));jalan('%s [%s!%s] %sCONNECTION PROBLEM'%(M,P,M,P));_cici_cici_()
