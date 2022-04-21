@@ -192,7 +192,6 @@ def menu():
     except requests.exceptions.ConnectionError:print('%s [ %sOPPSS :) %s]%s'%(M,P,M,P));print('%s '%(M));jalan('%s [%s!%s] %sCONNECTION PROBLEM'%(M,P,M,P));_cici_cici_()
     try:a = _req_get_("http://ip-api.com/json/",headers={"Referer":"http://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36;]"}).json();ip = a["query"];loc = a["country"].upper()
     except KeyError:ip = " "
-    psb('         %s》%s》%s》%sWelcome%s《%s《%s《'%(M,H,B,H,B,H,M))
     print('%s '%(O))
     print('%s [%s•%s] %sNAME   %s: %s%s'%(H,P,H,B,K,H,n))
     print('%s [%s•%s] %sID     %s: %s%s'%(H,P,H,B,K,H,i))
