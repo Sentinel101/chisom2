@@ -26,11 +26,11 @@ def keluar():
 
 		
 
-def acak(b):
 
-    w = 'ahtdzjc'
 
-    d = ''
+    w 
+
+
 
     for i in x:
 
