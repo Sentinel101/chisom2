@@ -158,7 +158,7 @@ def menu_log():
     bersih();clear()
     banner()
     var_menu()
-    pmu = _cici_azimvau_('%s [%s•%s] %sCHOOSE : %s'%(H,P,H,K,H))
+
     print('%s '%(O))
     if pmu in ['']:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,P));menu_log()
     elif pmu in ['1','01','001','a']:
